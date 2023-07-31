@@ -1,0 +1,3 @@
+FontAwesome.com   for varius fonts to use in website
+
+cdnjs.com (content delivery network)        for libraries 

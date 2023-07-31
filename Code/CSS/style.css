@@ -1,0 +1,301 @@
+*{
+    margin:0; /*Initially all margins are initialized with o*/
+    font-family: Arial;
+    border:border-box ; /**/
+}
+/* Navbar Section */
+.navbar{
+    height : 60px;
+    background-color:#0f1111   ;
+    color : white;
+    display: flex;  /*To display all divs in a row horizontically */
+    align-items: center;
+    justify-content: space-evenly;
+    /* used to distribute all space evenly */
+}
+.nav-logo{
+    height: 50px;
+    width: 100px;
+}
+.logo{
+    background-image: url("/Resourses/Images/amazon_logo.png"); 
+    background-size:cover ;/*means the 
+    background image will always fit the whole div*/
+    height: 50px;
+    width:100%;
+
+}
+.border{
+    border: 2px solid transparent;
+} 
+.border:hover{
+    border: 1.5px solid white;/*1.5 px border will display*/
+}
+
+/* box2 */
+.add-first{
+    color:#cccccc;
+    font-size:0.85rem;
+    /* used to set font */
+    margin-left:15px;
+}
+.add-sec{
+    
+    font-size:1rem;
+    /* used to set font */
+    margin-left: 3px;
+}
+.add-icon{ 
+    display:flex; /*to display all divs in a row horizontically*/
+    align-items:center;
+    margin-left: 15px;
+}
+
+/* Box 3 */
+.nav-search{
+    display:flex;
+    /* all content will occupy same space */
+    justify-content: space-evenly;
+    background-color: pink;
+    width: 620px;
+    height: 40px;
+    border-radius: 5px;
+    margin-left: 10px;
+}
+.search-select{
+    background-color: #f3f3f3; 
+    width: 50px;
+    text-align: center;
+    /* to add curved boundry to  left botton,top search -select box */
+    border-top-left-radius:4px ;
+    border-bottom-left-radius:4px ;
+    border: none;
+    /* default border is removed */
+}
+
+.search-input{
+    /* all remaining space given to search bar
+    now we have to adjust only remaining things */
+    width: 100%;
+    font-size: 1rem;
+    border: none;
+}
+.search-icon{
+    width:45px;
+    height:100%;
+    display: flex;
+    justify-content: center ;
+    align-items: center;
+    font-size: 1.2rem;
+    background-color: #febd68;
+    /* to add curved boundry to  right botton,top search -select box */
+    border-top-right-radius:4px ;
+    border-bottom-right-radius:4px ;
+    border: none;
+    /* default border is removed */
+    color: #0f1111;
+}
+.nav-search:hover{
+    border:2px solid orange;
+}
+
+/* box 4 */
+.nav-language i {
+    font-size: 20px;
+}
+.nav-language {
+    display: flex;
+    align-items: center;
+    justify-content: center ;
+    
+} 
+.nav-lang-option{
+    display: flex;
+    align-items: center;
+    justify-content: center ;
+    font-size: 0.85rem;
+    font-weight:700 ;
+    margin-left: 2px;
+    margin-top: 3px;
+}
+
+/* Box 5 */
+span{
+    font-size: 0.7rem;
+}
+.nav-second{
+    font-size: 0.85rem; 
+}
+
+/* Box 7 */
+/* "i" is written for is we write any css in this 
+block this will apply only on all icons */
+.nav-cart i{ 
+    font-size: 30px;
+}
+
+.nav-cart { 
+    font-size: 0.85rem;
+    font-weight:700 ;
+    /* used to make bold  */
+}
+
+/* Panel */
+.panel{
+    height:40px;
+    background-color: #222f3d;
+    display: flex;
+    color: white;
+    /* To allign vertically */
+    align-items: center;
+    justify-content: space-evenly;
+}
+.panel-all{
+    margin-right: 100px;
+}
+/* p used for paragraphs changes only affect on para */
+.panel-ops p{
+    /* to make all options in one line */
+    display: inline;
+    margin-left: 15px;
+}
+.panel-ops{
+    width: 70%;
+    font-size: 0.85rem;
+}
+.panel-deals{
+    font-size: 0.9rem;
+    font-weight: 700;
+}
+
+/* Hero Section */
+.hero-section{
+    background-image: url("/Resourses/Images/hero_image.jpg");
+    /* fit to screen */
+    background-size: cover;
+    height: 350px;
+    display: flex ;
+    justify-content:center ;
+    align-items:flex-end ;
+}
+.hero-msg{
+    background-color: white;
+    color: black;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 0.85rem;
+    width: 80%;
+    margin-bottom: 25px;
+ 
+}
+.hero-msg a{
+    color: #007183
+}
+
+/* Shop Section */
+.shop-section{
+    display: flex;
+    /* flex-wrap: wrap;
+    used for The flex-wrap CSS property sets whether flex items are forced 
+    onto one line or can wrap onto multiple lines */
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    background-color: #e2e7e6;
+}
+.box{
+    /* border:2px solid black; */
+    height: 400px;
+    width: 23%;
+    background-color: white ;
+    padding: 20px 0px 15px;
+    margin-top: 15px;
+}
+.box-img{
+    height: 300px;
+    /*background-size: cover;
+    it will stop repeatation of image  */
+    background-size: cover;
+    margin-top:1rem ;
+    margin-bottom: 1rem;
+    
+}
+.box-content{
+    margin-left: 1rem;
+    margin-right: 1rem;
+}
+.box-content p{
+    color: #007183
+}
+
+/* Footer */
+.footer{
+    margin-top:15px;
+}
+.foot-panel1{
+    background-color:#37475a ;
+    color: white;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 0.85rem;
+}
+.foot-panel2{
+    background-color: #222f3d;
+    color:white;
+    height: 300px;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+ul{
+    margin-top:20px;
+}
+ul a{
+    display: block;
+    font-size: 0.85rem;
+    margin-top:10px;
+    color: #dddddd;
+}
+.foot-panel3{
+    background-color: #222f3d;
+    color:white;
+    border-top:0.5px solid white;
+    height: 70px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.logo{
+    background-image: url("/Resourses/Images/amazon_logo.png"); 
+    background-size:cover ;/*means the 
+    background image will always fit the whole div*/
+    height: 50px;
+    width: 100px;
+}
+.foot-panel4{
+    background-color:#0f1111 ;
+    font: white;
+    height:80px;
+    font-size: 0.7rem;
+    text-align: center;
+    /* display: flex;
+    justify-content: center;
+    align-items: center; */
+}
+.pages{
+    color: white;
+    padding-top: 25px;
+    /* font-size: 0.7rem;
+    text-align: center; */
+    
+
+}
+.copyright{
+    color: white;
+    padding-top: 5px;
+    /* font-size: 0.7rem;
+    text-align: center;*/
+} 
